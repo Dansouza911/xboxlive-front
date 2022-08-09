@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <Styled.HomeContainer>
       <Styled.Header>
-        <div>
+        <div> 
           <div className="UserStatus">
             <img alt="backPage" src={back} />
             <img alt="userPicture" src={iconUser} />
