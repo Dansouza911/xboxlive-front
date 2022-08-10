@@ -1,14 +1,15 @@
+import { Games } from "../../types";
 import * as Styled from "./styles";
 
-const GamesCard = () => {
+interface GamesCardProps {
+  games: Games;
+}
+
+const GamesCard = ({ games }: GamesCardProps) => {
   return (
     <Styled.GamesCard>
-      <div className="cards">
-        <figure className="card">
-          <img src="https://mrreiha.keybase.pub/codepen/hover-fx/1.jpg" />
-          <figcaption>Dota 2</figcaption>
-        </figure>
-      </div>
+      <img alt={games.title} src={games.image}></img>
+      <h3>{games.title}</h3>
     </Styled.GamesCard>
   );
 };

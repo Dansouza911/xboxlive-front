@@ -1,4 +1,5 @@
 import { Games } from "../../types";
+import GamesCard from "../GamesCard";
 import * as Styled from "./styles";
 
 interface GamesListProps {
@@ -8,8 +9,8 @@ interface GamesListProps {
 const GamesList = ({ list }: GamesListProps) => {
   return (
     <Styled.GamesListContainer>
-      {list.map((Element, index) => (
-        <div key={index}>Card</div>
+      {list.map((element, index) => (
+        <GamesCard games={element} key={element.id} />
       ))}
     </Styled.GamesListContainer>
   );

@@ -28,48 +28,8 @@ img {
     min-height: 100%;
 }
 
-figcaption {
-      
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    background: none;
-    color: #fff;
-    transform: translateY( 100% );
-    transition: .3s;
 
-    &:after {
 
-        content: '';
-        z-index: 10;
-        width: 200%;
-        height: 100%;
-        top: -90%;
-        left: -20px;
-        opacity: .1;
-        transform: rotate( 45deg );
-        background: linear-gradient( to top, transparent, #fff 15%, rgba( #fff, .5 ) );
-        transition: .3s;
-    }
-
-    &:hover, &:focus, &:active{
-
-        box-shadow: 0 8px 16px 3px rgba( #000, .6 );
-        transform: translateY( -3px ) scale( 1.05 ) rotateX( 15deg );
-        
-             
-        
-    }
-        &:after {
-
-            transform: rotate( 25deg );
-            top: -40%;
-            opacity: .15;
-        }
-}
 
 
 

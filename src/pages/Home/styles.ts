@@ -14,10 +14,10 @@ export const HomeContainer = styled.div`
   display: grid;
 
   grid-auto-columns: 9rem auto;
-  grid-auto-rows: 6rem;
+  grid-auto-rows: 5rem 22rem auto;
   grid-template-areas:
     "header header"
-    "homeContent homeContent"
+    "homeContent homeContent" 
     "menu menuSidebar";
 
   grid-gap: 10px;
@@ -62,17 +62,19 @@ export const Header = styled.div`
 
 export const HomeContent = styled.div`
   grid-area: homeContent;
-  height: 7rem;
+ 
 
 `;
 
 export const Menu = styled.div`
   grid-area: menu;
+ 
 `;
 
 export const MenuSidebar = styled.div`
   grid-area: menuSidebar;
   margin-left: 1.5rem;
+  
 `;
 
 export const MenuButton = styled.button`

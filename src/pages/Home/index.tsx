@@ -36,7 +36,6 @@ const Home = () => {
       </Styled.Header>
       <Styled.HomeContent>
         <div className="list">
-          <GamesCard />
           <img alt="game1" />
           <img alt="game2" />
           <img alt="game3" />
